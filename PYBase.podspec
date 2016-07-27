@@ -39,4 +39,5 @@ base 系列
     s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
     s.dependency 'MJRefresh', '~> 3.1.12'
+    s.dependency 'PYUtil', '~> 1.0.2'
 end

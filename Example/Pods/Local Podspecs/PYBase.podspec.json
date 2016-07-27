@@ -1,22 +1,31 @@
 {
   "name": "PYBase",
   "version": "0.1.0",
-  "summary": "A short description of PYBase.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/PYBase",
+  "summary": "基础控件",
+  "description": "base 系列",
+  "homepage": "https://github.com/yunhe-lin/PYBase",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "林云鹤": "1367159949@qq.com"
+    "yunhe.lin": "1367159949@qq.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/PYBase.git",
+    "git": "https://github.com/yunhe-lin/PYBase.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "PYBase/Classes/**/*"
+  "source_files": "PYBase/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "dependencies": {
+    "MJRefresh": [
+      "~> 3.1.12"
+    ],
+    "PYUtil": [
+      "~> 1.0.2"
+    ]
+  }
 }

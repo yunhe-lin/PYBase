@@ -1,11 +1,14 @@
+source 'https://github.com/yunhe-lin/PYSepecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 use_frameworks!
 
 target 'PYBase_Example' do
   pod 'PYBase', :path => '../'
 
-  target 'PYBase_Tests' do
-    inherit! :search_paths
-
-    
-  end
+#  target 'PYBase_Tests' do
+#    inherit! :search_paths
+#
+#    
+#  end
 end

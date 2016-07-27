@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A70005FFBC7B40B8790B8D7BFC577FC5'
+               BlueprintIdentifier = '446761F212FAA3B76EA0123AAC39C575'
                BlueprintName = 'PYBase'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'PYBase.framework'>
