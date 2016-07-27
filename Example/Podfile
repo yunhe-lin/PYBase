@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PYBase_Example' do
+  pod 'PYBase', :path => '../'
+
+  target 'PYBase_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,6 @@
+framework module PYBase {
+  umbrella header "PYBase-umbrella.h"
+
+  export *
+  module * { export * }
+}
