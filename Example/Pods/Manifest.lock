@@ -2,6 +2,7 @@ PODS:
   - Masonry (1.0.1)
   - MJRefresh (3.1.12)
   - PYBase (0.1.0):
+    - Masonry
     - MJRefresh (~> 3.1.12)
     - PYUtil (~> 1.0.2)
   - PYUtil (1.0.4):
@@ -17,7 +18,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  PYBase: 2fcf14da4ae56a6aed91d1bd11b5e333bffc2e7d
+  PYBase: a27f359fe9ae60854ea4783893123983b0c34f62
   PYUtil: bb517b1b67c4dcca58174714f6981e8aab6e0fee
 
 PODFILE CHECKSUM: 010db270bba5f7ebb098915dfe9011d0e101c74a

@@ -8,11 +8,13 @@
 
 #import "PYBaseTableView.h"
 #import "MJRefresh.h"
+#import "PYRefreshHeader.h"
+#import "PYRefreshFooter.h"
 
 @interface PYBaseTableView()
 
-@property (nonatomic, strong) MJRefreshNormalHeader *normalHeader;
-@property (nonatomic, strong) MJRefreshAutoNormalFooter   *autoFooter;
+@property (nonatomic, strong) PYRefreshHeader *normalHeader;
+@property (nonatomic, strong) PYRefreshFooter   *autoFooter;
 
 @property (nonatomic, assign) PYTableViewRefreshType tableRefreshType;
 @property (nonatomic, strong) UIView *blankView;
@@ -111,18 +113,18 @@
 
 #pragma mark - accessors method 
 
-- (MJRefreshNormalHeader *)normalHeader
+- (PYRefreshHeader *)normalHeader
 {
     if (!_normalHeader) {
-        _normalHeader = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headRefreshAction)];
+        _normalHeader = [PYRefreshHeader py_headerWithRefreshingTarget:self refreshingAction:@selector(headRefreshAction)];
     }
     return _normalHeader;
 }
 
-- (MJRefreshAutoNormalFooter *)autoFooter
+- (PYRefreshFooter *)autoFooter
 {
     if (!_autoFooter) {
-        _autoFooter = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footRefreshAction)];
+        _autoFooter = [PYRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(footRefreshAction)];
     }
     return _autoFooter;
 }

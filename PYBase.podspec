@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PYBase'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '基础控件'
 
 # This description is used to generate tags and improve search results.
@@ -32,10 +32,10 @@ base 系列
 
   s.source_files = 'PYBase/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'PYBase' => ['PYBase/Assets/*.png']
-  # }
-
+   s.resource_bundles = {
+    'PYBase' => ['PYBase/Assets/*.{png, jpg}']
+  }
+    s.prefix_header_contents = '#import "PYBaseHeader.h"'
     s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
     s.dependency 'MJRefresh', '~> 3.1.12'

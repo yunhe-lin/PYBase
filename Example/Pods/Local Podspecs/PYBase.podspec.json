@@ -19,6 +19,12 @@
     "ios": "8.0"
   },
   "source_files": "PYBase/Classes/**/*",
+  "resource_bundles": {
+    "PYBase": [
+      "PYBase/Assets/*.{png, jpg}"
+    ]
+  },
+  "prefix_header_contents": "#import \"PYBaseHeader.h\"",
   "public_header_files": "Pod/Classes/**/*.h",
   "dependencies": {
     "MJRefresh": [
@@ -26,6 +32,9 @@
     ],
     "PYUtil": [
       "~> 1.0.2"
+    ],
+    "Masonry": [
+
     ]
   }
 }
