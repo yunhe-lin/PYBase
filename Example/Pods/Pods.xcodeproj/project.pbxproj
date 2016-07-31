@@ -52,10 +52,20 @@
 		681F4BE137E9E24B0E5B1AE027B8B175 /* Pods-PYBase_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3CC8AAD9BFD0D54061EECF8627D423 /* Pods-PYBase_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		68414987AA50FDAB11213EDA57B3C6BD /* UIScrollView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 315E7058A1B31F14EAC925ED2BA75EF7 /* UIScrollView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		695194FF2E80B52F216C20ABE7377DA8 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = DC61DECB112E6C3FA8E38F8534A84CCA /* MJRefreshConst.m */; };
+		6D4FBBAF1D4E2E00009246BA /* PYRefreshManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D4FBBAD1D4E2E00009246BA /* PYRefreshManager.h */; };
+		6D4FBBB01D4E2E00009246BA /* PYRefreshManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4FBBAE1D4E2E00009246BA /* PYRefreshManager.m */; };
+		6D4FBBB41D4E314B009246BA /* PYBaseCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D4FBBB21D4E314B009246BA /* PYBaseCollectionView.h */; };
+		6D4FBBB51D4E314B009246BA /* PYBaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4FBBB31D4E314B009246BA /* PYBaseCollectionView.m */; };
+		6D4FBBB81D4E33FD009246BA /* PYBaseCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D4FBBB61D4E33FD009246BA /* PYBaseCollectionViewCell.h */; };
+		6D4FBBB91D4E33FD009246BA /* PYBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4FBBB71D4E33FD009246BA /* PYBaseCollectionViewCell.m */; };
 		6D6203381D49FE44002C021E /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D6203361D49FE44002C021E /* arrow@2x.png */; };
 		6D6203391D49FE44002C021E /* arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D6203371D49FE44002C021E /* arrow@3x.png */; };
-		6D62033C1D4B05E8002C021E /* PYRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D62033A1D4B05E8002C021E /* PYRefreshFooter.h */; };
-		6D62033D1D4B05E8002C021E /* PYRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D62033B1D4B05E8002C021E /* PYRefreshFooter.m */; };
+		6DB412D21D4E2BC500B64C5B /* PYRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB412CE1D4E2BC500B64C5B /* PYRefreshFooter.h */; };
+		6DB412D31D4E2BC500B64C5B /* PYRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB412CF1D4E2BC500B64C5B /* PYRefreshFooter.m */; };
+		6DB412D41D4E2BC500B64C5B /* PYRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB412D01D4E2BC500B64C5B /* PYRefreshHeader.h */; };
+		6DB412D51D4E2BC500B64C5B /* PYRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB412D11D4E2BC500B64C5B /* PYRefreshHeader.m */; };
+		6DB412D81D4E2C1000B64C5B /* PYBaseTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB412D61D4E2C1000B64C5B /* PYBaseTableViewCell.h */; };
+		6DB412D91D4E2C1000B64C5B /* PYBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB412D71D4E2C1000B64C5B /* PYBaseTableViewCell.m */; };
 		729AA360DBD60262882C65123B3E8CA0 /* UIView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FF825B66A95ED8591D14C1179FF7617 /* UIView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73FED5C3C00468ECD4C665B55B0D46DF /* NSBundle+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B6E2C233CA762B555136FEC3A2E77FA /* NSBundle+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		747D181536AE92CD19C540EEA3DF3305 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA822BA5E8950A8A1F23E0E3ECC72679 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -102,12 +112,10 @@
 		C6ACED30B76CF52BEB798A320CBF0B34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761DAC0CC39B5A233DEE20FE4D03A285 /* UIKit.framework */; };
 		C7D5956BC40DF084B0E0F6453AF656C8 /* PYHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 71B182542936621AF1CB6C8077ED6906 /* PYHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C85667E5737BEE47D9760602F56DE8FD /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2613903388FC6720F40D4559D49CAA2D /* MJRefreshBackNormalFooter.m */; };
-		C92A30B17881DFCFA5E8DB1560A0CE0B /* PYRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5B209C15B7DD19B91883543165874A /* PYRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9E6DACF93244E7953CF33F6785E8A17 /* PYDateFormatterHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F9F02457E632D28582979491032D18EC /* PYDateFormatterHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE8A98EEE8F61C973F3B0298482BD663 /* PYBaseTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A91826C8468E41DE871F9F24D1ABD0F /* PYBaseTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D00212A2142350D22692D6EDECEFB48A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BE536A791AC0F00142BB54768D22B276 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		D11F2C1C9F89043AE6690329039CF10D /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F9CCF104EF31B683176DE29DEC6163C /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3871E2AB12E640B78389564E64F36E6 /* PYRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 430E57FC2CC1B7246AEB33E0D0C66E6F /* PYRefreshHeader.m */; };
 		D5E89301F81317CAC61BCBB0A3D0B268 /* PYUtil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C96AC1502967DDF6893892DDCB68066 /* PYUtil-dummy.m */; };
 		D7282330F0FDF5F1523711E424A266D9 /* UINavigationBar+PYUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9DB485789FBE47884E9BF05BA9B5E1 /* UINavigationBar+PYUtil.m */; };
 		DCCE43312475EEB374D4D72253F719AF /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA701E05869E53FB5B365ACD3E06A0 /* MJRefreshFooter.m */; };
@@ -227,7 +235,6 @@
 		3D00512D6C939B6AC012CDB29AC1049F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D441DC6389191FCF2D86CD86A516E29 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		409E3C3F43D2A97C49A5F45878E504D1 /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackNormalFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
-		430E57FC2CC1B7246AEB33E0D0C66E6F /* PYRefreshHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PYRefreshHeader.m; sourceTree = "<group>"; };
 		46588F4BEEE5ADC3FDD236C050CB6277 /* Pods-PYBase_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PYBase_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		476E67BD97839F1D64867824EB6E2AB7 /* MJRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-prefix.pch"; sourceTree = "<group>"; };
 		4B317F21972F6A5D3FE80B76B5922927 /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoGifFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
@@ -248,10 +255,20 @@
 		6B6E2C233CA762B555136FEC3A2E77FA /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+MJRefresh.h"; path = "MJRefresh/NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
 		6D09FE758C18DDCF8D3CCC01018AE96A /* UIView+PYUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+PYUtil.h"; path = "PYUtil/Classes/PYCategory/UIView+PYUtil.h"; sourceTree = "<group>"; };
 		6D3045A05838726A6ED0E5F3359323B3 /* UIImage+PYBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+PYBase.h"; sourceTree = "<group>"; };
+		6D4FBBAD1D4E2E00009246BA /* PYRefreshManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYRefreshManager.h; sourceTree = "<group>"; };
+		6D4FBBAE1D4E2E00009246BA /* PYRefreshManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYRefreshManager.m; sourceTree = "<group>"; };
+		6D4FBBB21D4E314B009246BA /* PYBaseCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYBaseCollectionView.h; sourceTree = "<group>"; };
+		6D4FBBB31D4E314B009246BA /* PYBaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYBaseCollectionView.m; sourceTree = "<group>"; };
+		6D4FBBB61D4E33FD009246BA /* PYBaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYBaseCollectionViewCell.h; sourceTree = "<group>"; };
+		6D4FBBB71D4E33FD009246BA /* PYBaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYBaseCollectionViewCell.m; sourceTree = "<group>"; };
 		6D6203361D49FE44002C021E /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
 		6D6203371D49FE44002C021E /* arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@3x.png"; sourceTree = "<group>"; };
-		6D62033A1D4B05E8002C021E /* PYRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYRefreshFooter.h; sourceTree = "<group>"; };
-		6D62033B1D4B05E8002C021E /* PYRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYRefreshFooter.m; sourceTree = "<group>"; };
+		6DB412CE1D4E2BC500B64C5B /* PYRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYRefreshFooter.h; sourceTree = "<group>"; };
+		6DB412CF1D4E2BC500B64C5B /* PYRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYRefreshFooter.m; sourceTree = "<group>"; };
+		6DB412D01D4E2BC500B64C5B /* PYRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYRefreshHeader.h; sourceTree = "<group>"; };
+		6DB412D11D4E2BC500B64C5B /* PYRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYRefreshHeader.m; sourceTree = "<group>"; };
+		6DB412D61D4E2C1000B64C5B /* PYBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYBaseTableViewCell.h; sourceTree = "<group>"; };
+		6DB412D71D4E2C1000B64C5B /* PYBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYBaseTableViewCell.m; sourceTree = "<group>"; };
 		6DDDE3B96357065BC044A3A75F7333DB /* UINavigationBar+PYUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+PYUtil.h"; path = "PYUtil/Classes/PYCategory/UINavigationBar+PYUtil.h"; sourceTree = "<group>"; };
 		7046C377525E9972A2CED39A6F46535E /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshStateHeader.h; path = MJRefresh/Custom/Header/MJRefreshStateHeader.h; sourceTree = "<group>"; };
 		71B182542936621AF1CB6C8077ED6906 /* PYHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PYHeader.h; path = PYUtil/Classes/PYHeader.h; sourceTree = "<group>"; };
@@ -315,7 +332,6 @@
 		C98C5CE92A29C55DF2B59C07A89FDBCA /* UIView+PYUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+PYUtil.m"; path = "PYUtil/Classes/PYCategory/UIView+PYUtil.m"; sourceTree = "<group>"; };
 		C9ABB520273258EC6B52E382A8D2057A /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
 		CAFE389DF8592B81C27D6BE5B9BD6C38 /* MJRefreshConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConst.h; path = MJRefresh/MJRefreshConst.h; sourceTree = "<group>"; };
-		CD5B209C15B7DD19B91883543165874A /* PYRefreshHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PYRefreshHeader.h; sourceTree = "<group>"; };
 		CE9DB485789FBE47884E9BF05BA9B5E1 /* UINavigationBar+PYUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+PYUtil.m"; path = "PYUtil/Classes/PYCategory/UINavigationBar+PYUtil.m"; sourceTree = "<group>"; };
 		CEC450AA2C17F72B4BC6AAAA1D88100C /* PYCategoryHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PYCategoryHeader.h; path = PYUtil/Classes/PYCategory/PYCategoryHeader.h; sourceTree = "<group>"; };
 		CFA9BA3EFB48E6228E47C785EAB60232 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
@@ -453,6 +469,8 @@
 		1A55E577C07DB8235DF96B4B8B318924 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6D4FBBB11D4E3130009246BA /* PYBaseCollectionView */,
+				6DB412CD1D4E2BC500B64C5B /* PYRefresh */,
 				2A48680425A8057F535F51E732F47C40 /* PYBase */,
 				87102E75691A783779A81B55C1DB4AEB /* PYBaseTableView */,
 				E8EB865F1FB081E187D1661623EDEAEA /* PYBaseView */,
@@ -532,6 +550,30 @@
 			path = PYBase;
 			sourceTree = "<group>";
 		};
+		6D4FBBB11D4E3130009246BA /* PYBaseCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				6D4FBBB21D4E314B009246BA /* PYBaseCollectionView.h */,
+				6D4FBBB31D4E314B009246BA /* PYBaseCollectionView.m */,
+				6D4FBBB61D4E33FD009246BA /* PYBaseCollectionViewCell.h */,
+				6D4FBBB71D4E33FD009246BA /* PYBaseCollectionViewCell.m */,
+			);
+			path = PYBaseCollectionView;
+			sourceTree = "<group>";
+		};
+		6DB412CD1D4E2BC500B64C5B /* PYRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				6DB412CE1D4E2BC500B64C5B /* PYRefreshFooter.h */,
+				6DB412CF1D4E2BC500B64C5B /* PYRefreshFooter.m */,
+				6DB412D01D4E2BC500B64C5B /* PYRefreshHeader.h */,
+				6DB412D11D4E2BC500B64C5B /* PYRefreshHeader.m */,
+				6D4FBBAD1D4E2E00009246BA /* PYRefreshManager.h */,
+				6D4FBBAE1D4E2E00009246BA /* PYRefreshManager.m */,
+			);
+			path = PYRefresh;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -549,10 +591,8 @@
 			children = (
 				9A91826C8468E41DE871F9F24D1ABD0F /* PYBaseTableView.h */,
 				F74210B2ED4974B0C9474DA390B433C1 /* PYBaseTableView.m */,
-				CD5B209C15B7DD19B91883543165874A /* PYRefreshHeader.h */,
-				430E57FC2CC1B7246AEB33E0D0C66E6F /* PYRefreshHeader.m */,
-				6D62033A1D4B05E8002C021E /* PYRefreshFooter.h */,
-				6D62033B1D4B05E8002C021E /* PYRefreshFooter.m */,
+				6DB412D61D4E2C1000B64C5B /* PYBaseTableViewCell.h */,
+				6DB412D71D4E2C1000B64C5B /* PYBaseTableViewCell.m */,
 			);
 			path = PYBaseTableView;
 			sourceTree = "<group>";
@@ -843,14 +883,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D4FBBB41D4E314B009246BA /* PYBaseCollectionView.h in Headers */,
+				6DB412D41D4E2BC500B64C5B /* PYRefreshHeader.h in Headers */,
+				6DB412D21D4E2BC500B64C5B /* PYRefreshFooter.h in Headers */,
 				1ABA930F70E9999870CEE30F2E02F565 /* NSBundle+PYBase.h in Headers */,
+				6DB412D81D4E2C1000B64C5B /* PYBaseTableViewCell.h in Headers */,
 				2619601B4DD54EE7643D31BF7EF4C48D /* PYBase-umbrella.h in Headers */,
 				AA0FFEEF3954A56E0B5E339BDEC086E5 /* PYBaseHeader.h in Headers */,
 				CE8A98EEE8F61C973F3B0298482BD663 /* PYBaseTableView.h in Headers */,
+				6D4FBBAF1D4E2E00009246BA /* PYRefreshManager.h in Headers */,
 				8854B0E68D58ACD2411C363304EE8C41 /* PYBaseView.h in Headers */,
-				C92A30B17881DFCFA5E8DB1560A0CE0B /* PYRefreshHeader.h in Headers */,
-				6D62033C1D4B05E8002C021E /* PYRefreshFooter.h in Headers */,
 				2A4A6D6C78865101DEF033360B305B57 /* UIImage+PYBase.h in Headers */,
+				6D4FBBB81D4E33FD009246BA /* PYBaseCollectionViewCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1080,12 +1124,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC7E8638EAD81BCBD14715BC249B841C /* NSBundle+PYBase.m in Sources */,
+				6DB412D51D4E2BC500B64C5B /* PYRefreshHeader.m in Sources */,
+				6D4FBBB91D4E33FD009246BA /* PYBaseCollectionViewCell.m in Sources */,
 				9907D2141C6836DD6D7123C7E412D85D /* PYBase-dummy.m in Sources */,
 				BAE60372F9CF81FE68FF0D36D719ED46 /* PYBaseTableView.m in Sources */,
+				6D4FBBB01D4E2E00009246BA /* PYRefreshManager.m in Sources */,
+				6DB412D31D4E2BC500B64C5B /* PYRefreshFooter.m in Sources */,
 				C0F55D3DBB1F61F1B508A95691502F15 /* PYBaseView.m in Sources */,
-				6D62033D1D4B05E8002C021E /* PYRefreshFooter.m in Sources */,
-				D3871E2AB12E640B78389564E64F36E6 /* PYRefreshHeader.m in Sources */,
 				6331F273D8A40714EDBFEE7F4CD2DC79 /* UIImage+PYBase.m in Sources */,
+				6D4FBBB51D4E314B009246BA /* PYBaseCollectionView.m in Sources */,
+				6DB412D91D4E2C1000B64C5B /* PYBaseTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
