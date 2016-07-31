@@ -10,4 +10,10 @@
 
 @interface PYBaseCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, strong) id cellData;
+
+- (void)initCellUI;
+
+- (void)refreshCollectionViewCell:(id)cellData;
+
 @end

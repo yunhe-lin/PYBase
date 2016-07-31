@@ -10,4 +10,19 @@
 
 @implementation PYBaseCollectionViewCell
 
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame]) {
+        [self initCellUI];
+    }
+    return self;
+}
+
+- (void)initCellUI{};
+
+- (void)refreshCollectionViewCell:(id)cellData
+{
+    self.cellData = cellData;
+}
+
 @end
